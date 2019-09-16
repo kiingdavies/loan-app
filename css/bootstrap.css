@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.homeNav {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #999;
+}
+
+.homeNav ul {
+  text-align: center;
+}
+.homeNav ul li {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.main-content form {
+  width: 50%;
+  height: fit-content;
+  margin: 30px auto;
+}
+.main-content form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.main-content button {
+  padding: 10px;
+  border: none;
+  background: #38bc8a;
+  color: #fff;
+  border-radius: 4px;
+}
+.regForm,
+.loginForm {
+  display: none;
+}
+.closeBtn,
+.closeLoginBtn {
+  font-size: 50px;
+  color: #dd0d0d;
+}
