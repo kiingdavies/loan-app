@@ -8,29 +8,31 @@
     <title>User Sign Up</title>
   </head>
   <body>
-    <nav class="homeNav">
+    <nav class="homeNav colored-section">
         <ul>
-            <a href="index.html"><li>Home</li></a>
-            <li>About</li>
-            <li>Contact</li>
-            <a href="signup.html"><li class="registerBtn">Register</li></a>
-            <li class="loginBtn">Login</li>
-            <li class="logoutBtn">Log out</li>
+            <a id="textDec" href="index.html"><li>Home</li></a>
+            <a id="textDec" href="about.html"><li>About</li></a>
+            <a id="textDec" href="contact.html"><li>Contact</li></a>
+            <a id="textDec" href="signup.html"><li class="registerBtn">Register</li></a>
+            <a id="textDec" href="index.html"><li class="logoutBtn">Log out</li></a>
         </ul>
     </nav>
     <main class="main-content">
         <p class="regMessage"></p>
 
-    <form class="loginForm">
-        <p class="regMessage"></p>
-        <div class="closeLoginBtn">&Cross;</div>
-        <input type="emailLogin" name="emailLogin" id="emailLogin" placeholder="Email Address" />
-        <input type="passwordLogin" name="passwordLogin" id="passwordLogin" placeholder="password" />
-        <button class="loginSubmitBtn">Login</button>
-</form>
-    </main>
-    <footer>© Copyright 2019 DecaLoan</footer>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/forms.js"></script>
+        <form class="loginForm">
+                <p class="regMessage"></p>
+                <p>Already have an account? <em>Login</em></p>
+                <!-- <div class="closeLoginBtn">&Cross;</div> -->
+                <input type="emailLogin" name="emailLogin" id="emailLogin" placeholder="Email Address" />
+                <input type="passwordLogin" name="passwordLogin" id="passwordLogin" placeholder="password" />
+                <button class="loginSubmitBtn">Login</button>
+        </form>
+        
+            </main>
+            
+            <footer>© Copyright 2019 DecaLoan</footer>
+            <script src="./js/jquery.js"></script>
+            <script src="./js/forms.js"></script>
   </body>
 </html>
