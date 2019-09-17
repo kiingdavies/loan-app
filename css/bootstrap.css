@@ -48,6 +48,17 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 }
 
 /* Navigation Bar */
+#textDec {
+  color: white;
+}
+
+/* a:link {
+  color: white;
+} */
+
+/* nav ul a {
+  text-decoration: none;
+} */
 
 .homeNav {
   width: 100%;
@@ -56,11 +67,8 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 
 }
 
-
  .homeNav ul {
   text-align: right;
-
-
  }
 
 .homeNav ul li {
@@ -96,6 +104,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   height: fit-content;
   margin: 30px auto;
 }
+
 .main-content form input {
   width: 90%;
   padding: 10px;
@@ -103,6 +112,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   border: 1px solid #999;
   border-radius: 4px;
 }
+
 .main-content button {
   padding: 10px;
   border: none;
@@ -110,10 +120,12 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   color: #fff;
   border-radius: 4px;
 }
+
 .regForm,
 .loginForm {
   display: none;
 }
+
 .closeBtn,
 .closeLoginBtn {
   font-size: 50px;
