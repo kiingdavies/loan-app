@@ -48,6 +48,8 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 }
 
 /* Navigation Bar */
+
+
 #textDec {
   color: white;
 }
@@ -62,6 +64,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 
  .homeNav ul {
   text-align: right;
+  margin-left: 21rem;
  }
 
 .homeNav ul li {
@@ -109,7 +112,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 .main-content button {
   padding: 10px;
   border: none;
-  background: #38bc8a;
+  background: #0a7d6b;
   color: #fff;
   border-radius: 4px;
 }
@@ -144,6 +147,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 .title-image {
   width: 80%;
   position: absolute;
+  margin-left: 6rem;
 
 }
 

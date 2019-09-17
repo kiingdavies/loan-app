@@ -106,7 +106,7 @@ $(document).ready(function() {
           localStorage.setItem('email', emailLogin);
 
           //redirect to home page if the login is successfull
-          window.location.assign('index.html'); //send to the dashborad not index again
+          window.location.assign('dashboad.html'); //send to the dashborad not index again
         } else {
           $('.regMessage').html('Username or password Incorrect');
         }
