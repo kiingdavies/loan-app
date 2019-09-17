@@ -1,13 +1,12 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "user": [
+    {
+      "fullname": "Davies Nurudeen",
+      "username": "davNur",
+      "email": "dav@gmail.com",
+      "password": "128237449",
+      "id": 1
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { 
-    "name": "",
-    "email": "",
-    "employment status": ""
-  }
+  "loan": []
 }
