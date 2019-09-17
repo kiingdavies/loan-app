@@ -23,9 +23,17 @@ $(document).ready(function() {
     const username = $('#username').val();
     const password = $('#password').val();
     const email = $('#email').val();
+    const phoneNum = $('#phone-number').val();
+    const BvnNum = $('#bvn').val();
+    
+    //check BvnNum is 11 digits
+    if (BvnNum.length < 11 || BvnNum.length > 11 ){
+      $('.regMessage').html('Bvn not correct!');
+      return;
+    }
 
     //Check if user input is empty
-    if (!fullname || !username || !password || !email) {
+    if (!fullname || !username || !password || !email || !phoneNum || !BvnNum) {
       $('.regMessage').html('Kindly fill in all fields');
       return;
     }
@@ -55,6 +63,8 @@ $(document).ready(function() {
               username,
               email,
               password,
+              phoneNum,
+              BvnNum,
             },
             beforeSend: function() {
               $('.regMessage').html('Loading....');
