@@ -114,12 +114,8 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   border-radius: 4px;
 }
 
-.regForm {
+.regForm, .loginForm  {
   display: block;
-}
-
-.loginForm {
-  display: none;
 }
 
 .closeBtn,
