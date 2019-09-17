@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css\dashboard.css" rel="stylesheet">
+  <link href="css\dashb.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
@@ -77,6 +78,36 @@
         <h1 class="text-center">Welcome</h1>
         <p class="text-center">This is the administrative management page of Healing Hands Hospital. <br> Please ensure that you save any changes you are making appropriately. <br>Thank you.</p>
       </div>
+
+      <!-- MyLoan -->
+      <div class="myLoan">
+            <button type="button" class="btn btn-primary" id="myLoanBtn">Apply For New Loan</button>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Plan</th>
+                        <th>Date Applied</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Duration</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Short-Term</td>
+                        <td>Yesterday</td>
+                        <td>1,000,000</td>
+                        <td>Pending</td>
+                        <td>1 Year</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+      </div>
+      <!-- MyLoan end -->
     </div>
 
 
