@@ -53,24 +53,36 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="sidebar navbar-nav nav-color">
+    <ul class="sidebar navbar-nav ">
+            <li class="nav-item">
+                    <a class="nav-link" href="dashboad.html">
+                        <i class="fa fa-home"></i>
+                      <span >Home</span></a>
+                  </li>
+
       <li class="nav-item">
         <a class="nav-link" href="index.html">
-            <i class="fa fa-user-plus"></i>
-          <span class="nav-color">Add New Patient</span>
+            <i class="fa fa-user"></i>
+          <span >My Profile</span>
         </a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
             <i class="fa fa-search"></i>
-          <span class="nav-color">Find Patient</span></a>
-      </li>
+          <span >My Loan</span></a>
+      </li> -->
       <li class="nav-item">
           <a class="nav-link" href="charts.html">
-              <i class="fa fa-users"></i>
-            <span class="nav-color">View All Patient</span></a>
+              <i class="fa fa-money"></i>
+            <span>My Loan</span></a>
         </li>
+
+        <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fa fa-mobile"></i>
+                  <span>Loan Application</span></a>
+              </li>
       </ul>
 <!-- This is where the main features are inserted -->
     <div id="content-wrapper">
@@ -79,9 +91,11 @@
         <p class="text-center">This is the administrative management page of Healing Hands Hospital. <br> Please ensure that you save any changes you are making appropriately. <br>Thank you.</p>
       </div>
 
-      <!-- MyLoan -->
-      <div class="myLoan">
+       <!-- MyLoan -->
+       <div class="myLoan">
+           
             <button type="button" class="btn btn-primary" id="myLoanBtn">Apply For New Loan</button>
+            <h2 class="text-center">Your Loan History</h2>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -108,6 +122,66 @@
             </table>
       </div>
       <!-- MyLoan end -->
+
+      <!-- Application form -->
+      <div class="applyForm">
+          <h2 class="text-center">Application Form</h2>
+          <div class="form-group">
+              <select class="form-control" name="bank" placeholder="Select your bank">
+                  <option>Select Your Bank</option>
+                  <option>ACCESS BANK</option>
+                  <option>ECOBANK</option>
+                  <option>FIRST BANK</option>
+                  <option>GTBANK</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+                <input type="text" name="employer" id="employer" placeholder="Enter Your Employer Name" class="form-control">
+            </div>
+
+          <div class="form-group">
+                <select class="form-control" name="location" id="location">
+                    <option>Select Your Location</option>
+                    <option>Abuja</option>
+                    <option>Benin</option>
+                    <option>Delta</option>
+                    <option>Enugu</option>
+                    <option>Lagos</option>
+                    <option>Niger</option>
+                    <option>Port-Harcourt</option>
+                </select>
+            </div>
+
+          <div class="form-group">
+              <input type="number" name="acctno" id="acctno" placeholder="Enter Your Account Number" class="form-control">
+          </div>
+
+          <div class="form-group">
+                <label>Amount Eligible:</label>
+                <input type="number" name="eligibility" id="eligibility" placeholder="" class="form-control">
+            </div>
+
+          <div class="form-group">
+                <input type="number" name="lesseramt" id="lesseramt" placeholder="Enter Lesser Amount" class="form-control">
+          </div>
+
+          <div class="form-group">
+                <select class="form-control" name="duration" id="duration">
+                    <option>Select Loan Duration</option>
+                    <option>3 Months</option>
+                    <option>6 Months</option>
+                    <option>9 Months</option>
+                    <option>12 Months</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+      </div>
+      <!-- Application form end-->
+
     </div>
 
 
