@@ -52,13 +52,6 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   color: white;
 }
 
-/* a:link {
-  color: white;
-} */
-
-/* nav ul a {
-  text-decoration: none;
-} */
 
 .homeNav {
   width: 100%;
@@ -121,7 +114,10 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
   border-radius: 4px;
 }
 
-.regForm,
+.regForm {
+  display: block;
+}
+
 .loginForm {
   display: none;
 }
@@ -151,7 +147,6 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 
 .title-image {
   width: 80%;
-  /* transform: rotate(25deg); */
   position: absolute;
 
 }
@@ -183,7 +178,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 /* Testimonial section */
 
 #testimonials {
-  background-color: #ef8172;
+  background-color: #00aaff;
 }
 
 .testimonial-text {
@@ -198,7 +193,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 }
 
 #press {
-  background-color: #ef8172;
+  background-color: #00aaff;
   padding-bottom: 3%;
 }
 
