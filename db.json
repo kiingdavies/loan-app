@@ -10,5 +10,28 @@
       "id": 1
     }
   ],
-  "loan": []
+  "loan": [
+    {
+      "bank": "ACCESS BANK",
+      "employer": "dffjll",
+      "location": "Benin",
+      "acctno": "3456789",
+      "eligibility": "3456789000",
+      "lesseramt": "2345",
+      "duration": "6 Months",
+      "appliedDate": "Wed Sep 18 2019 13:09:29 GMT+0100 (West Africa Standard Time)",
+      "id": 1
+    },
+    {
+      "bank": "FIRST BANK",
+      "employer": "fgjhkl",
+      "location": "Port-Harcourt",
+      "acctno": "4567890",
+      "eligibility": "908544",
+      "lesseramt": "4567",
+      "duration": "12 Months",
+      "currentDate": "18-09-2019",
+      "id": 2
+    }
+  ]
 }

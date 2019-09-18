@@ -169,6 +169,8 @@ $(document).ready(function() {
 
        //get Date Applied
         const appliedDate = new Date();
+        const month = ((appliedDate.getMonth().length+1) ===1)? (appliedDate.getMonth()+1) : '0' + (appliedDate.getMonth()+1);
+        const currentDate = appliedDate.getDate() + "-" + month + "-" + appliedDate.getFullYear();
         
 
        //prevent empty form submission
@@ -188,7 +190,7 @@ $(document).ready(function() {
             eligibility,
             lesseramt,
             duration,
-            appliedDate,
+            currentDate,
           },
           beforeSend: function() {
             $('.loanMsg').html('Loading....');
@@ -198,6 +200,31 @@ $(document).ready(function() {
           },
         });
       }
-       
      });
+
+     //fetch Value from DataBase
+
+     function getLoanData() {
+       $.ajax({
+          method: 'GET',
+          url: 'http://localhost:3000/loan',
+          success: function (data) {
+            let loanList = ''
+            $.each(data, function(i,v){
+              loanList += `
+              <tr>
+                        <td>${i + 1}</td>
+                        <td>${v.currentDate}</td>
+                        
+                        <td>${v.lesseramt}</td>
+                        <td>Pending</td>
+                        <td>${v.duration}</td>
+                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>`;
+            })
+            $("#LoanHistory").html(loanList);
+          }
+       });
+     }
+     getLoanData();
 });
