@@ -121,4 +121,83 @@ $(document).ready(function() {
     $('.checkLogin').html('Kindly login');
     window.location.assign('signup.html');
   });
+
+  
+          //Menu Buttons Function
+          $('.myLoan').hide();
+          $('.applyForm').hide();
+     
+     $('.homeBtn').click(function(){
+         $('.myLoan').fadeOut();
+         $('.applyForm').fadeOut();
+         $('.welcomeNote').fadeIn();
+     });
+
+     $('.loanBtn').click(function(event){
+       event.preventDefault();
+       $('.welcomeNote').fadeOut();
+       $('.applyForm').fadeOut();
+       $('.myLoan').fadeIn();
+     });
+
+     $('.formBtn').click(function(event){
+       event.preventDefault();
+       $('.myLoan').fadeOut();
+       $('.welcomeNote').fadeOut();
+       $('.applyForm').fadeIn();
+     });
+
+     $('#myLoanBtn').click(function(event){
+       event.preventDefault();
+       $('.myLoan').fadeOut();
+       $('.welcomeNote').fadeOut();
+       $('.applyForm').fadeIn();
+     });
+
+     //Application Form Submit
+     $('.LoanSubmitBtn').click(function(event){
+       event.preventDefault();
+
+       //geting value from the form
+       const bank = $('#bank').val();
+       const employer = $('#employer').val();
+       const location = $('#location').val();
+       const acctno = $('#acctno').val();
+       const eligibility = $('#eligibility').val();
+       const lesseramt = $('#lesseramt').val();
+       const duration = $('#duration').val();
+
+       //get Date Applied
+        const appliedDate = new Date();
+        
+
+       //prevent empty form submission
+       if(!bank || !employer || !location || !acctno || !eligibility || !lesseramt || !duration ){
+        alert("Complete all empty fields");
+        return false;
+       }else {
+        //Submit application form
+        $.ajax({
+          method: 'POST',
+          url: 'http://localhost:3000/loan',
+          data: {
+            bank,
+            employer,
+            location,
+            acctno,
+            eligibility,
+            lesseramt,
+            duration,
+            appliedDate,
+          },
+          beforeSend: function() {
+            $('.loanMsg').html('Loading....');
+          },
+          success: function() {
+            $('.loanMsg').html('Application Successfull!');
+          },
+        });
+      }
+       
+     });
 });
