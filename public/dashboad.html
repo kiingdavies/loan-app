@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Loan App</title>
+
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template-->
+  <link href="css\dashboard.css" rel="stylesheet">
+  <link href="css\dashb.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand  static-top nav-color-top">
+
+    <a class="navbar-brand mr-1 nav-color" href="homePg.html">DecaLoan App</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <!-- <i class="fas fa-bars"></i> -->
+    </button>
+
+
+
+    <!-- Navbar -->
+    <ul class="navbar-nav ml-auto">
+      <li class="logoutBtn nav-item dropdown no-arrow mx-1">
+
+        <a class="nav-link dropdown-toggle nav-color" href="index.html" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-power-off"></i> Logout
+
+        </a>
+
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav ">
+            <li class="nav-item homeBtn">
+                    <a class="nav-link" href="dashboad.html">
+                        <i class="fa fa-home"></i>
+                      <span >Home</span></a>
+                  </li>
+
+      <li class="nav-item profileBtn">
+        <a class="nav-link">
+            <i class="fa fa-user"></i>
+          <span >My Profile</span>
+        </a>
+      </li>
+
+      <li class="nav-item loanBtn">
+          <a class="nav-link">
+              <i class="fa fa-money"></i>
+            <span>My Loan</span></a>
+        </li>
+
+        <li class="nav-item formBtn">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-mobile"></i>
+                  <span>Loan Application</span></a>
+              </li>
+      </ul>
+<!-- This is where the main features are inserted -->
+    <div id="content-wrapper">
+      <div class="container-fluid welcomeNote">
+        <h1 class="text-center">Welcome To DecaLoan</h1>
+        <p class="text-center">Thank you</p>
+      </div>
+
+       <!-- MyLoan -->
+       <div class="myLoan">
+
+            <button type="button" class="btn btn-primary" id="myLoanBtn">
+                <i class="fa fa-plus"></i> Apply For New Loan</button>
+            <h2 class="text-center">Your Loan History</h2>
+            <table class="table ">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Bank</th>
+                        <th>Employer</th>
+                        <th>Location</th>
+                        <th>Account</th>
+                        <th>Amount(N)</th>
+                        <th>Applied Date</th>
+                        <th>Payment Duration</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="LoanHistory"></tbody>
+            </table>
+      </div>
+      <!-- MyLoan end -->
+
+      <!-- Application form -->
+      <div class="applyForm">
+        <p class="loanMsg text-center"></p>
+          <h2 class="text-center">Application Form</h2>
+          <div class="form-group">
+              <select class="form-control" name="bank" placeholder="Select your bank" id="bank">
+                  <option>Select Your Bank</option>
+                  <option>ACCESS BANK</option>
+                  <option>ECOBANK</option>
+                  <option>FIRST BANK</option>
+                  <option>GTBANK</option>
+                  <option>UBA</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+                <input type="text" name="employer" id="employer" placeholder="Enter Your Employer Name" class="form-control">
+            </div>
+
+          <div class="form-group">
+                <select class="form-control" name="location" id="location">
+                    <option>Select Your Location</option>
+                    <option>Abuja</option>
+                    <option>Benin</option>
+                    <option>Delta</option>
+                    <option>Enugu</option>
+                    <option>Lagos</option>
+                    <option>Niger</option>
+                    <option>Port-Harcourt</option>
+                </select>
+            </div>
+
+          <div class="form-group">
+              <input type="number" name="acctno" id="acctno" placeholder="Enter Your Account Number" class="form-control">
+          </div>
+
+          <div class="form-group">
+                <label>Amount Eligible:</label>
+                <input type="number" name="eligibility" id="eligibility" placeholder="" class="form-control">
+            </div>
+
+          <div class="form-group">
+                <input type="number" name="lesseramt" id="lesseramt" placeholder="Enter Lesser Amount" class="form-control">
+          </div>
+
+          <div class="form-group">
+                <select class="form-control" name="duration" id="duration">
+                    <option>Select Loan Duration</option>
+                    <option>3 Months</option>
+                    <option>6 Months</option>
+                    <option>9 Months</option>
+                    <option>12 Months</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success LoanSubmitBtn">Submit</button>
+            </div>
+      </div>
+      <!-- Application form end-->
+
+      <!-- My Profile -->
+      <div class="myProfile">
+          <p class="profileMsg text-center"></p>
+          <h2 class="text-center">My Profile</h2>
+
+
+      <div class=" row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="form-group">
+              <input type="text" name="full-name" id="fullname" placeholder="Full Name" class="form-control">
+          </div>
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                  <input type="number" name="number" id="Phonenumber" placeholder="Phone Number" class="form-control">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group">
+                   <input type="number" name="bvn" id="bvn" placeholder="Bvn" class="form-control">
+               </div>
+               </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="johndoe@example.com" class="form-control">
+                </div>
+              </div>
+
+                <div class="form-group">
+                    <select class="form-control" name="sex" id="sex">
+                        <option>-- Sex --</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <input type="date" name="dob" id="dob" placeholder="dd/mm/yyy" class="form-control">
+                    </div>
+                  </div><br>
+                  <div class="form-group">
+                      <select class="form-control" name="marital" id="marital">
+                          <option>-- Marital Status --</option>
+                          <option>Single</option>
+                          <option>Married</option>
+                          <option>Divorced</option>
+                      </select>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="form-group">
+                         <input type="text" name="address" id="address" placeholder="Address" class="form-control">
+                     </div>
+                  </div>
+      </div>
+      <div>
+          <button type="button" class="btn btn-success ProfileSubmitBtn">
+              <i class="fa fa-pencil"></i> Update Profile</button>
+      </div>
+
+      </div>
+      <!-- My Profile -->
+    </div>
+
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>© Copyright 2019 DecaLoan</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- My forms.js link -->
+<script src="js\jquery.js"></script>
+<script src="./js/forms.js"></script>
+
+
+
+</body>
+
+</html>

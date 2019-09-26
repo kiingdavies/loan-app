@@ -1,4 +1,5 @@
 
+
 .nav-color{
     background: linear-gradient(to right, #00aaff, #0a7d6b);
      color: white;
@@ -10,18 +11,18 @@
      box-shadow: 1px 1px #000000;
    }
    
+   .loanBtn, .profileBtn, .usersBtn {
+    cursor: pointer;
+  }
+
    i{
      color: white;
    }
 
    /* Table styling */
 
-   .myLoan {
+   .myLoan,.applyForm, .myProfile {
         margin: 5rem;
-   }
-
-   .applyForm {
-       margin: 5rem;
    }
 
    #myLoanBtn, h2 {

@@ -1,3 +1,5 @@
+
+
 * {
   padding: 0;
   margin: 0;
@@ -64,7 +66,7 @@ background: linear-gradient(to right, #00aaff, #0a7d6b);
 
  .homeNav ul {
   text-align: right;
-  margin-left: 21rem;
+  margin-left: 16rem;
  }
 
 .homeNav ul li {

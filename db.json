@@ -1,37 +1,21 @@
 {
   "user": [
     {
-      "fullname": "Davies Nurudeen",
-      "username": "davNur",
-      "email": "dav@gmail.com",
-      "password": "123456678899",
-      "phoneNum": "08098467252",
-      "BvnNum": "34245754782",
+      "fullname": "Davies Adedeji",
+      "username": "kiingdavies",
+      "email": "daviesadedeji007@gmail.com",
+      "password": "56578494",
+      "phoneNum": "35647893",
+      "BvnNum": "34352534216",
       "id": 1
     }
   ],
-  "loan": [
+  "loan": [],
+  "profile": [],
+  "admin": [
     {
-      "bank": "ACCESS BANK",
-      "employer": "dffjll",
-      "location": "Benin",
-      "acctno": "3456789",
-      "eligibility": "3456789000",
-      "lesseramt": "2345",
-      "duration": "6 Months",
-      "appliedDate": "Wed Sep 18 2019 13:09:29 GMT+0100 (West Africa Standard Time)",
-      "id": 1
-    },
-    {
-      "bank": "FIRST BANK",
-      "employer": "fgjhkl",
-      "location": "Port-Harcourt",
-      "acctno": "4567890",
-      "eligibility": "908544",
-      "lesseramt": "4567",
-      "duration": "12 Months",
-      "currentDate": "18-09-2019",
-      "id": 2
+      "email": "jarule@gmail.com",
+      "password": "123456"
     }
   ]
 }
