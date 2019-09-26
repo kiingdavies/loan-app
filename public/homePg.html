@@ -25,7 +25,7 @@
     <h1>Home Page</h1>
     <h2 class="checkLogin"></h2>
     <p class="regMessage"></p>
-    <form class="regForm">
+    <form class="regForm" onsubmit="event.preventDefault();onFormSubmit();">
       <div class="closeBtn">&Cross;</div>
       <input type="text" name="fullname" id="fullname" placeholder="Full Name" />
       <input type="text" name="username" id="username" placeholder="Username" />
@@ -33,9 +33,9 @@
       <input type="password" name="password" id="password" placeholder="password" />
       <button class="regSubmitBtn">Register</button>
     </form>
-    
+
     <!-- Login form -->
-    <form class="loginForm">
+    <form class="loginForm" onsubmit="event.preventDefault();onFormSubmit();">
       <p class="regMessage"></p>
       <div class="closeLoginBtn">&Cross;</div>
       <input type="emailLogin" name="emailLogin" id="emailLogin" placeholder="Email Address" />

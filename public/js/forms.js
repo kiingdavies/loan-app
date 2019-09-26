@@ -254,12 +254,16 @@ $(document).ready(function() {
         const month = ((appliedDate.getMonth().length+1) ===1)? (appliedDate.getMonth()+1) : '0' + (appliedDate.getMonth()+1);
         const currentDate = appliedDate.getDate() + "-" + month + "-" + appliedDate.getFullYear();
 
-
+        //validate lesseramt is lower than eligible amount
+        if(lesseramt > eligibility){
+          $('.loanMsg').html('Invalid Lesser Amount');
+          return;
+        }
         //check Account Num is 10 digits
-    if (acctno.length < 10 || acctno.length > 10 ){
-      $('.regMessage').html('Account not correct!');
-      return;
-    }
+        if (acctno.length < 10 || acctno.length > 10 ){
+          $('.loanMsg').html('Account Number Incorrect!');
+          return;
+        }
 
        //prevent empty form submission
        if(!bank || !employer || !location || !acctno || !eligibility || !lesseramt || !duration ){
@@ -292,7 +296,7 @@ $(document).ready(function() {
 
 
 
-     //fetch Value from Loan DataBase
+     //fetch Value from Loan DataBase to display on myLoan page
 
      function getLoanData() {
        $.ajax({
@@ -333,6 +337,8 @@ $(document).ready(function() {
        });
      }
      loadProfile();
+
+     
 
      //delete button function
      $('body').on('click','.deleteBtn', function(e){
