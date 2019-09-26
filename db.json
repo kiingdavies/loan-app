@@ -1,15 +1,5 @@
 {
-  "user": [
-    {
-      "fullname": "Davies Adedeji",
-      "username": "kiingdavies",
-      "email": "daviesadedeji007@gmail.com",
-      "password": "56578494",
-      "phoneNum": "35647893",
-      "BvnNum": "34352534216",
-      "id": 1
-    }
-  ],
+  "user": [],
   "loan": [],
   "profile": [],
   "admin": [

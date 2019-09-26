@@ -312,7 +312,7 @@ $(document).ready(function() {
                         <td>${v.lesseramt}</td>
                         <td>Pending</td>
                         <td>${v.duration}</td>
-                        <td><button type="button" class="btn btn-danger">Delete</button></td>
+                        <td><button type="button" class="btn btn-danger deleteBtn">Delete</button></td>
                     </tr>`;
             })
             $("#LoanHistory").html(loanList);
@@ -338,9 +338,28 @@ $(document).ready(function() {
      }
      loadProfile();
 
+     //delete button function for user
+     $('body').on('click','.deleteBtnUser', function(e){
+      e.preventDefault();
+      let id = $(this).val()
+      $.ajax({
+        "url": "http://localhost:3004/user/"+id,
+        "method": "DELETE",
+        data:{id},
+        beforeSend: function(){
+          alert("Deleted?")
+        },
+        success: function(data){
+          alert("Record Deleted Successfully!")
+        },
+        error: function(e){
+          alert("", JSON.stringify(e))
+        }
+      })
+    })
      
 
-     //delete button function
+     //delete button function for loan
      $('body').on('click','.deleteBtn', function(e){
        e.preventDefault();
        let id = $(this).val()
@@ -378,7 +397,7 @@ $(document).ready(function() {
                        <td>${v.password}</td>
                        <td>${v.BvnNum}</td>
                        <td>${v.email}</td>
-                       <td><button type="button" class="btn btn-danger deleteBtn" value="${v.id}"><i class="fa fa-trash"></i> Delete</button></td>
+                       <td><button type="button" class="btn btn-danger deleteBtnUser" value="${v.id}"><i class="fa fa-trash"></i> Delete</button></td>
                    </tr>`;
            })
            $("#userHistory").html(userList);
