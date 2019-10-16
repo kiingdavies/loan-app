@@ -6,20 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <title>User Sign Up</title>
+    
+    <!--  Bootstrap Javascripts -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="homeNav">
-        <ul>
-            <a href="./index.html">
-                <li>Home</li>
-            </a>
-            <li>About</li>
-            <li>Contact</li>
-            <li class="registerBtn">Register</li>
-            <!-- <li class="loginBtn">Login</li> -->
-            <li class="logoutBtn">Log out</li>
-        </ul>
-    </nav>
+    <!-- Nav Bar -->
+    <nav class="homeNav navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">DecaLoan App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="moveRight ">
+          <a id="textDec" href="public/about.html"></a><li>About</li></a>
+          <a id="textDec" href="public/contact.html"><li>Contact</li></a>
+          <a id="textDec" href="public/signup.html"><li class="registerBtn">Register</li></a>
+          <a id="textDec" href="public/login.html"><li class="loginBtn">Login</li></a>
+          <a id="textDec" href="public/adminLogin.html"><li class="adminBtn">Admin</li></a>
+      </ul>
+    </div>
+</nav>
     
     <main class="main-content">
         <p class="regMessage"></p>
@@ -76,7 +86,7 @@
         <button class="loginSubmitBtn">Login</button>
 </form>
     </main>
-    <footer>© Copyright 2019 DecaLoan</footer>
+    <footer>© Copyright 2019 King Davies</footer>
     <script src="./js/forms.js"></script>
     <script src="./js/forms.js"></script>
   </body>
