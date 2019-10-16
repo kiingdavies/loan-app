@@ -17,7 +17,7 @@ p {
 }
 
 /* input */
-input{
+.main-content input{
   width: 80%;
   padding: auto 2rem;
 }
