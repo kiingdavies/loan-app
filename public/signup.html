@@ -16,14 +16,16 @@
             <li>About</li>
             <li>Contact</li>
             <li class="registerBtn">Register</li>
-            <li class="loginBtn">Login</li>
+            <!-- <li class="loginBtn">Login</li> -->
             <li class="logoutBtn">Log out</li>
         </ul>
     </nav>
+    
     <main class="main-content">
         <p class="regMessage"></p>
       <form class="regForm">
-          <div class="closeBtn">&Cross;</div>
+        <p>Create an account</p>
+          <!-- <div class="closeBtn">&Cross;</div> -->
         <input
           type="text"
           name="fullname"
@@ -36,24 +38,45 @@
           id="username"
           placeholder="Username"
         />
-        <input type="email" name="email" id="email" placeholder="Email Address" />
+        <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="Email Address" 
+        />
         <input
           type="password"
           name="password"
           id="password"
-          placeholder="password"
+          placeholder="Password"
         />
+
+        <input 
+          type="number" 
+          name="phone-number" 
+          id="phone-number" 
+          placeholder="Phone Number" 
+        />
+        <input
+          type="number"
+          name="bvn"
+          id="bvn"
+          placeholder="BVN Number"
+        />
+
+        
         <button class="regSubmitBtn">Register</button>
       </form>
     <form class="loginForm">
         <p class="regMessage"></p>
-        <div class="closeLoginBtn">&Cross;</div>
+        <p>Already have an account? <em>Login</em></p>
+        <!-- <div class="closeLoginBtn">&Cross;</div> -->
         <input type="emailLogin" name="emailLogin" id="emailLogin" placeholder="Email Address" />
         <input type="passwordLogin" name="passwordLogin" id="passwordLogin" placeholder="password" />
         <button class="loginSubmitBtn">Login</button>
 </form>
     </main>
-    <footer>Copyright &copy; Group B Peopls</footer>
+    <footer>© Copyright 2019 DecaLoan</footer>
     <script src="./js/jquery.js"></script>
     <script src="./js/forms.js"></script>
   </body>

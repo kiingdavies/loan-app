@@ -12,7 +12,7 @@
 <body>
   <nav class="homeNav">
     <ul>
-      <a href="index.html"><li>Home</li></a>
+      <a href="C:\Users\KING DAVIES\Desktop\GITPROJECT\loan-app\index.html"><li>Home</li></a>
       <li>About</li>
       <li>Contact</li>
       <li class="registerBtn">Register</li>
@@ -20,19 +20,22 @@
       <li class="logoutBtn">Log out</li>
     </ul>
   </nav>
+  <!-- RegForm -->
   <main class="main-content">
     <h1>Home Page</h1>
     <h2 class="checkLogin"></h2>
     <p class="regMessage"></p>
-    <form class="regForm">
+    <form class="regForm" onsubmit="event.preventDefault();onFormSubmit();">
       <div class="closeBtn">&Cross;</div>
       <input type="text" name="fullname" id="fullname" placeholder="Full Name" />
       <input type="text" name="username" id="username" placeholder="Username" />
-      <input type="email" name="email" id="email" placeholder="Email Address" />
+      <input type="email" name="email" id="email" placeholder="Email Address" required />
       <input type="password" name="password" id="password" placeholder="password" />
       <button class="regSubmitBtn">Register</button>
     </form>
-    <form class="loginForm">
+
+    <!-- Login form -->
+    <form class="loginForm" onsubmit="event.preventDefault();onFormSubmit();">
       <p class="regMessage"></p>
       <div class="closeLoginBtn">&Cross;</div>
       <input type="emailLogin" name="emailLogin" id="emailLogin" placeholder="Email Address" />
@@ -40,7 +43,7 @@
       <button class="loginSubmitBtn">Login</button>
     </form>
   </main>
-  <footer>Copyright &copy; Group B Peopls</footer>
+  <footer> © Copyright 2019 DecaLoan</footer>
   <script src="js\jquery.js"></script>
   <script src="js\forms.js"></script>
   <script src="js\checkLogin.js"></script>
