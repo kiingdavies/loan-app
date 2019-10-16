@@ -16,6 +16,10 @@ p {
   color: #8f8f8f;
 }
 
+/* input */
+input{
+  width: 80%;
+}
 /* Headings */
 
 .big-heading {
