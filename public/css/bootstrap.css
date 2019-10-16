@@ -17,7 +17,7 @@ p {
 }
 
 /* input field for all pages */
-#fullname {
+form input {
   width: 80%;
 }
 
