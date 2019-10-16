@@ -17,7 +17,7 @@ p {
 }
 
 /* input field for all pages */
-form input {
+.container-fluid input {
   width: 80%;
 }
 
